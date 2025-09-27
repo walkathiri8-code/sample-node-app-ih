@@ -58,8 +58,8 @@ jobs:
      - name: SonarQube Scan
        uses: SonarSource/sonarqube-scan-action@v6.0.0
        env:
-         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+         SONAR_HOST_URL: ${{ http://158.158.48.236:9000 }}
+         SONAR_TOKEN: ${{ sqa_0c3086d63271451f7338d4fe776c8c6480345f80 }}
        with:
          args: >
            -Dsonar.projectKey=sample-node-app-saurabh
